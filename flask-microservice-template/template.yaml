@@ -50,7 +50,7 @@ spec:
           description: ${{ parameters.description }}
           destination:
             repo: ${{ parameters.repo }}
-            owner: ramannkhanna2
+            owner: siddharthxsingh
 
     - id: wait
       name: Wait for GitHub to index repo
@@ -62,7 +62,7 @@ spec:
       name: Publish to GitHub
       action: publish:github
       input:
-        #repoUrl: github.com?repo=${{ parameters.repo }}&owner=ramannkhanna2
+        #repoUrl: github.com?repo=${{ parameters.repo }}&owner=siddharthxsingh
         repoUrl: github.com?owner=siddharthxsingh&repo=${{ parameters.repo }}
         repoVisibility: ${{ parameters.repoVisibility }}
 
